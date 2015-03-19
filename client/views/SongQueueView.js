@@ -3,14 +3,15 @@ var SongQueueView = Backbone.View.extend({
 	tagName: "table",
   initialize: function() {
   	this.render();
+  	// debugger;
   },
 
   render: function() {
   	console.log("entered queue render")
 
-  	this.$el.html('<th>My Queue</th>').append(
+  	return this.$el.html('<th>My Queue</th>').append(
 	    this.collection.map(function(song){
-	    	console.log(song)
+	    	console.log(song);
 	    	return new SongQueueEntryView({model: song}).render();
 	    })
     );

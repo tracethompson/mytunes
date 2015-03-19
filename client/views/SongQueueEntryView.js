@@ -2,8 +2,7 @@
 var SongQueueEntryView = Backbone.View.extend({
   // your code here!
 	initialize : function(){
-		this.render();
-		this.collection.on('change', this.render, this);
+		this.model.on('change', this.render, this);
 	},
   tagName: 'tr',
 
