@@ -1,0 +1,20 @@
+body{
+	
+};
+
+#container {
+	background-color: red;
+	right: 0;
+};
+
+audio {
+	position: absolute;
+};
+
+#queue {
+	background-color: black;
+};
+
+.library {
+	float:left;
+};
